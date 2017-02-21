@@ -1,0 +1,262 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:background="@android:color/white">
+
+
+    <LinearLayout
+        android:id="@+id/activity_main"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical">
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+
+            <ImageView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:adjustViewBounds="true"
+                android:src="@drawable/field" />
+
+
+            <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="@dimen/margin_team_and_score"
+                android:layout_marginRight="@dimen/margin_team_and_score">
+
+                <TextView
+                    style="@style/team_name"
+                    android:layout_alignParentLeft="true"
+                    android:layout_alignParentStart="true"
+                    android:text="@string/team_A" />
+
+                <TextView
+                    style="@style/team_name"
+                    android:layout_alignParentEnd="true"
+                    android:layout_alignParentRight="true"
+                    android:text="@string/team_B" />
+
+            </RelativeLayout>
+
+
+            <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_centerVertical="true"
+                android:layout_marginLeft="@dimen/margin_team_and_score"
+                android:layout_marginRight="@dimen/margin_team_and_score">
+
+                <TextView
+                    android:id="@+id/team_a_score"
+                    style="@style/score"
+                    android:layout_alignParentLeft="true"
+                    android:layout_alignParentStart="true"
+                    android:text="@string/initial_0" />
+
+                <TextView
+                    android:id="@+id/team_b_score"
+                    style="@style/score"
+                    android:layout_alignParentEnd="true"
+                    android:layout_alignParentRight="true"
+                    android:text="@string/initial_0" />
+
+            </RelativeLayout>
+
+
+        </RelativeLayout>
+
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+
+            <Button
+                android:id="@+id/team_a_scores"
+                style="@style/score_buttons"
+                android:layout_alignParentLeft="true"
+                android:layout_alignParentStart="true"
+                android:onClick="teamAScores"
+                android:text="@string/score" />
+
+            <Button
+                android:id="@+id/team_bb_score"
+                style="@style/score_buttons"
+                android:layout_alignParentEnd="true"
+                android:layout_alignParentRight="true"
+                android:onClick="teamBScores"
+                android:text="@string/score" />
+
+        </RelativeLayout>
+
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:padding="@dimen/padding_parameters">
+
+            <TextView
+                android:id="@+id/foul_a_text_view"
+                style="@style/textview_parameters_value"
+                android:layout_width="0dp"
+                android:layout_marginLeft="@dimen/activity_horizontal_margin"
+                android:layout_marginStart="@dimen/activity_horizontal_margin"
+                android:layout_weight="1"
+                android:text="@string/initial_0" />
+
+            <Button
+                style="@style/other_buttons"
+                android:layout_width="0dp"
+                android:layout_height="@dimen/height_button"
+                android:layout_weight="1"
+                android:onClick="teamACommitsFoul"
+                android:text="+" />
+
+            <TextView
+                android:id="@+id/fouls_text_view"
+                style="@style/textview_parameters_name"
+                android:layout_width="0dp"
+                android:layout_weight="2"
+                android:gravity="center_horizontal|center_vertical"
+                android:text="@string/foul" />
+
+
+            <Button
+                style="@style/other_buttons"
+                android:layout_width="0dp"
+                android:layout_height="@dimen/height_button"
+                android:layout_weight="1"
+                android:onClick="teamBCommitsFoul"
+                android:text="+" />
+
+            <TextView
+                android:id="@+id/foul_b_text_view"
+                style="@style/textview_parameters_value"
+                android:layout_width="0dp"
+                android:layout_marginEnd="@dimen/activity_horizontal_margin"
+                android:layout_marginRight="@dimen/activity_horizontal_margin"
+                android:layout_weight="1"
+                android:gravity="end"
+                android:text="@string/initial_0" />
+
+
+        </LinearLayout>
+
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:padding="@dimen/padding_parameters">
+
+            <TextView
+                android:id="@+id/yellow_a_text_view"
+                style="@style/textview_parameters_value"
+                android:layout_width="0dp"
+                android:layout_marginLeft="@dimen/activity_horizontal_margin"
+                android:layout_marginStart="@dimen/activity_horizontal_margin"
+                android:layout_weight="1"
+                android:text="@string/initial_0" />
+
+            <Button
+                style="@style/other_buttons"
+                android:layout_width="0dp"
+                android:layout_height="@dimen/height_button"
+                android:layout_weight="1"
+                android:onClick="teamAYellowCard"
+                android:text="+" />
+
+
+            <TextView
+                android:id="@+id/yellows_text_view"
+                style="@style/textview_parameters_name"
+                android:layout_width="0dp"
+                android:layout_weight="2"
+                android:gravity="center_horizontal|center_vertical"
+                android:text="@string/yellow" />
+
+            <Button
+                style="@style/other_buttons"
+                android:layout_width="0dp"
+                android:layout_height="@dimen/height_button"
+                android:layout_weight="1"
+                android:onClick="teamBYellowCard"
+                android:text="+" />
+
+            <TextView
+                android:id="@+id/yellow_b_text_view"
+                style="@style/textview_parameters_value"
+                android:layout_width="0dp"
+                android:layout_marginEnd="@dimen/activity_horizontal_margin"
+                android:layout_marginRight="@dimen/activity_horizontal_margin"
+                android:layout_weight="1"
+                android:gravity="end"
+                android:text="@string/initial_0" />
+
+
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:padding="@dimen/padding_parameters">
+
+            <TextView
+                android:id="@+id/red_a_text_view"
+                style="@style/textview_parameters_value"
+                android:layout_width="0dp"
+                android:layout_marginLeft="@dimen/activity_horizontal_margin"
+                android:layout_marginStart="@dimen/activity_horizontal_margin"
+                android:layout_weight="1"
+                android:text="@string/initial_0" />
+
+            <Button
+                style="@style/other_buttons"
+                android:layout_width="0dp"
+                android:layout_height="@dimen/height_button"
+                android:layout_weight="1"
+                android:onClick="teamARedCard"
+                android:text="+" />
+
+
+            <TextView
+                android:id="@+id/reds_text_view"
+                style="@style/textview_parameters_name"
+                android:layout_width="0dp"
+                android:layout_weight="2"
+                android:gravity="center_horizontal"
+                android:text="@string/red" />
+
+            <Button
+                style="@style/other_buttons"
+                android:layout_width="0dp"
+                android:layout_height="@dimen/height_button"
+                android:layout_weight="1"
+                android:onClick="teamBRedCard"
+                android:text="+" />
+
+            <TextView
+                android:id="@+id/red_b_text_view"
+                style="@style/textview_parameters_value"
+                android:layout_width="0dp"
+                android:layout_marginEnd="@dimen/activity_horizontal_margin"
+                android:layout_marginRight="@dimen/activity_horizontal_margin"
+                android:layout_weight="1"
+                android:gravity="end"
+                android:text="@string/initial_0" />
+
+        </LinearLayout>
+
+
+        <Button
+            style="@style/reset_button"
+            android:onClick="reset"
+            android:text="@string/reset" />
+
+
+    </LinearLayout>
+
+
+</ScrollView>

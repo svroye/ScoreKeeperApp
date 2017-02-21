@@ -1,0 +1,15 @@
+<resources>
+    <!-- Default screen margins, per the Android Design guidelines. -->
+    <dimen name="activity_horizontal_margin">16dp</dimen>
+    <dimen name="activity_vertical_margin">16dp</dimen>
+
+    <!--margin around the "team A" and "team B" TextViews, as well as the margin
+     around the corresponding score TextViews-->
+    <dimen name="margin_team_and_score">40dp</dimen>
+
+    <!-- padding around the parameters (e.g. fouls) -->
+    <dimen name="padding_parameters">16dp</dimen>
+
+    <!-- height of the + buttons -->
+    <dimen name="height_button">40dp</dimen>
+</resources>

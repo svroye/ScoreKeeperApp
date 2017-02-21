@@ -1,0 +1,28 @@
+<resources>
+    <string name="app_name">Score Keeper App</string>
+
+    <!-- name first team -->
+    <string name="team_A">Team A</string>
+
+    <!-- name second team-->
+    <string name="team_B">Team B</string>
+
+    <!-- text for score button -->
+    <string name="score">Score</string>
+
+    <!-- text for yellow card button -->
+    <string name="yellow">yellow cards</string>
+
+    <!-- text for red card button -->
+    <string name="red">red cards</string>
+
+    <!-- text for foul button -->
+    <string name="foul">fouls</string>
+
+    <!-- initial value 0 for all of the text fields -->
+    <string name="initial_0">0</string>
+
+    <!-- text for the reset button -->
+    <string name="reset">reset</string>
+
+</resources>
