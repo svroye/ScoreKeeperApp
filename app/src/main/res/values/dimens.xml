@@ -25,6 +25,6 @@
     <!-- margin bottom for the plus and reset button -->
     <dimen name="margin_bottom_plus_reset_button">8dp</dimen>
 
-    <!-- margin left and right for the reset button -->
+    <!-- margin left and right for the reset button  -->
     <dimen name="margin_reset">22dp</dimen>
 </resources>
