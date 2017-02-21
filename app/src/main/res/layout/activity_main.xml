@@ -79,15 +79,15 @@
                 style="@style/score_buttons"
                 android:layout_alignParentLeft="true"
                 android:layout_alignParentStart="true"
-                android:onClick="teamAScores"
+                android:onClick="buttonClick"
                 android:text="@string/score" />
 
             <Button
-                android:id="@+id/team_bb_score"
+                android:id="@+id/team_b_scores"
                 style="@style/score_buttons"
                 android:layout_alignParentEnd="true"
                 android:layout_alignParentRight="true"
-                android:onClick="teamBScores"
+                android:onClick="buttonClick"
                 android:text="@string/score" />
 
         </RelativeLayout>
@@ -108,11 +108,12 @@
                 android:text="@string/initial_0" />
 
             <Button
+                android:id="@+id/plus_fouls_a"
                 style="@style/other_buttons"
                 android:layout_width="0dp"
                 android:layout_height="@dimen/height_button"
                 android:layout_weight="1"
-                android:onClick="teamACommitsFoul"
+                android:onClick="buttonClick"
                 android:text="+" />
 
             <TextView
@@ -125,11 +126,12 @@
 
 
             <Button
+                android:id="@+id/plus_fouls_b"
                 style="@style/other_buttons"
                 android:layout_width="0dp"
                 android:layout_height="@dimen/height_button"
                 android:layout_weight="1"
-                android:onClick="teamBCommitsFoul"
+                android:onClick="buttonClick"
                 android:text="+" />
 
             <TextView
@@ -161,11 +163,12 @@
                 android:text="@string/initial_0" />
 
             <Button
+                android:id="@+id/plus_yellow_a"
                 style="@style/other_buttons"
                 android:layout_width="0dp"
                 android:layout_height="@dimen/height_button"
                 android:layout_weight="1"
-                android:onClick="teamAYellowCard"
+                android:onClick="buttonClick"
                 android:text="+" />
 
 
@@ -178,11 +181,12 @@
                 android:text="@string/yellow" />
 
             <Button
+                android:id="@+id/plus_yellow_b"
                 style="@style/other_buttons"
                 android:layout_width="0dp"
                 android:layout_height="@dimen/height_button"
                 android:layout_weight="1"
-                android:onClick="teamBYellowCard"
+                android:onClick="buttonClick"
                 android:text="+" />
 
             <TextView
@@ -213,11 +217,12 @@
                 android:text="@string/initial_0" />
 
             <Button
+                android:id="@+id/plus_red_a"
                 style="@style/other_buttons"
                 android:layout_width="0dp"
                 android:layout_height="@dimen/height_button"
                 android:layout_weight="1"
-                android:onClick="teamARedCard"
+                android:onClick="buttonClick"
                 android:text="+" />
 
 
@@ -230,11 +235,12 @@
                 android:text="@string/red" />
 
             <Button
+                android:id="@+id/plus_red_b"
                 style="@style/other_buttons"
                 android:layout_width="0dp"
                 android:layout_height="@dimen/height_button"
                 android:layout_weight="1"
-                android:onClick="teamBRedCard"
+                android:onClick="buttonClick"
                 android:text="+" />
 
             <TextView
@@ -251,8 +257,9 @@
 
 
         <Button
+            android:id="@+id/reset"
             style="@style/reset_button"
-            android:onClick="reset"
+            android:onClick="buttonClick"
             android:text="@string/reset" />
 
 
